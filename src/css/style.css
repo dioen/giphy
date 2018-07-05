@@ -1,0 +1,191 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.sort-form-wrapper > ul > li > a {
+  cursor: pointer;
+  line-height: 0.4;
+}
+
+.gif-card-wrapper {
+  width: 250px;
+  margin: 20px auto;
+  border: 1px solid #5a5a5a;
+  background: #3b4e60;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-body-wrapper {
+  padding: 0 15px;
+}
+
+.gif-card-img {
+  width: 100%;
+}
+
+.navbar {
+      border-radius: 0 0 10px 10px;
+}
+
+a.navbar-item-link {
+  color: #fff;
+  font-size: 12px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+  display: inline;
+}
+
+a.navbar-item-link:hover {
+  text-decoration: none;
+}
+
+.upload-file-content {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background: #af390a;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.like-button {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.like-button.active {
+  color: #ff2a2a;
+}
+
+.gif-details-link {
+  text-align: end;
+}
+
+.gif-details-wrapper {
+  cursor: default;
+}
+
+.gif-details-description-wrapper {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.gif-details-image-wrapper {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.gif-details-image-wrapper > img {
+  max-height: 500px;
+  max-width: 50%
+}
+
+.gif-details-related-header {
+  margin-top: 30px;
+}
+
+.form-inline {
+  text-align: center;
+}
+
+.material-spinner-wrapper {
+  position: absolute;
+  background: #3b4e60;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 25%;
+  max-width: 50%;
+}
+
+.material-spinner {
+  height: 50px;
+  min-height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  border: 5px transparent solid;
+  border-top: 5px #3F51B5 solid;
+  animation: material-spinner 4s infinite;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px); 
+}
+
+@keyframes material-spinner {
+  0% {
+      transform: rotate(0deg);
+      border-top: 5px #3F51B5 solid;
+  }
+  25% {
+      transform: rotate(360deg);
+      border-top: 5px #F44336 solid;
+  }
+  50% {
+      transform: rotate(720deg);
+      border-top: 5px #FFC107 solid;
+  }
+  75% {
+      transform: rotate(1080deg);
+      border-top: 5px #4CAF50 solid;
+  }
+  100% {
+      transform: rotate(1440deg);
+      border-top: 5px #3F51B5 solid;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .gif-card-wrapper {
+    margin: 13px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-container.pull-right {
+      float: none !important;
+  }
+}
